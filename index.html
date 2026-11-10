@@ -48,7 +48,7 @@
   </script>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  <meta name="theme-color" content="#FCF8EF">
+  <meta name="theme-color" content="#FCF7EC">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -60,116 +60,165 @@
     <div class="wrap header-inner">
       <a class="brand" href="#top"><img src="images/logo.jpg" alt="Whisker &amp; Roast logo" width="56" height="56"><span>Whisker &amp; Roast</span></a>
       <nav class="site-nav" aria-label="Main">
-        <a href="#mugs">Mugs</a>
-        <a href="#totes">Totes</a>
-        <a href="#pillows">Pillows</a>
-        <a href="#ornaments">Ornaments</a>
-        <a href="#bandanas">Pet bandanas</a>
-        <a href="#about">About</a>
-        <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop</a>
+        <a class="nav-etsy" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop<span class="sr-only"> (opens in a new tab)</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-panel" id="site-menu">
+          <a href="#mugs">Mugs</a>
+          <a href="#totes">Totes</a>
+          <a href="#pillows">Pillows</a>
+          <a href="#ornaments">Ornaments</a>
+          <a href="#bandanas">Pet bandanas</a>
+          <a href="#about">About</a>
+          <a class="nav-shop" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
       </nav>
     </div>
   </header>
   <main id="main">
     <section class="hero" id="top">
       <div class="wrap hero-inner">
-        <div>
+        <div class="hero-copy">
           <h1>For pet people who run on coffee</h1>
           <p>Artful dog and cat coffee mugs, canvas totes, throw pillows, Christmas ornaments, and pet bandanas. Printed when you order, with free shipping—checkout on Etsy.</p>
-          <div class="cta"><a class="btn" href="#mugs">Shop the catalog</a><a class="btn btn-alt" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Visit our Etsy shop</a></div>
+          <div class="cta"><a class="btn" href="#mugs">Shop the catalog</a><a class="btn btn-alt" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Visit our Etsy shop<span class="sr-only"> (opens in a new tab)</span></a></div>
         </div>
-        <img class="hero-logo" src="images/logo.jpg" alt="" width="600" height="600">
+        <ul class="hero-picks">
+          <li>
+            <a href="#personalized-dog-christmas-mug">
+              <span class="hero-photo">
+                <img src="images/01_biscuit_christmas_mockup.jpg" alt="" width="900" height="675" fetchpriority="high">
+                <span class="sample-badge">Sample personalization</span>
+              </span>
+              <span class="hero-caption"><span class="hero-full">Personalized mug</span><span class="hero-short">Name mug</span><span class="hero-sample">Sample</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="#funny-christmas-cat-mug">
+              <span class="hero-photo">
+                <img src="images/02_cat_ornament_mockup.jpg" alt="" width="900" height="675">
+              </span>
+              <span class="hero-caption">Christmas cat mug</span>
+            </a>
+          </li>
+          <li>
+            <a href="#cozy-winter-dog-mug">
+              <span class="hero-photo">
+                <img src="images/03_cozy_winter_dog_mockup.jpg" alt="" width="900" height="675">
+              </span>
+              <span class="hero-caption">Cozy winter mug</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
     <section id="gift-pages" class="wrap gift-guides" aria-labelledby="gift-guides-heading">
-      <h2 id="gift-guides-heading">Gift pages</h2>
-      <p>A few gifts people ask for. Checkout is on Etsy.</p>
+      <h2 id="gift-guides-heading">Popular gifts</h2>
+      <p>Shop by who it's for, or pick a holiday gift. Checkout is on Etsy.</p>
+      <div class="shop-filters" role="group" aria-label="Filter the catalog">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="dog" aria-pressed="false">Dog</button>
+        <button type="button" data-filter="cat" aria-pressed="false">Cat</button>
+        <button type="button" data-filter="holiday" aria-pressed="false">Holiday</button>
+      </div>
       <ul>
-        <li><a href="/victorian-christmas-pet-bandana/">Victorian Christmas pet bandanas</a></li>
-        <li><a href="/dog-christmas-ornaments/">Dog Christmas ornaments</a></li>
+        <li><a href="/victorian-christmas-pet-bandana/">Christmas bandanas</a></li>
+        <li><a href="/dog-christmas-ornaments/">Dog ornaments</a></li>
         <li><a href="/cat-christmas-gifts/">Cat Christmas gifts</a></li>
-        <li><a href="/coffee-gifts-for-dog-lovers/">Coffee gifts for dog lovers</a></li>
-        <li><a href="/personalized-dog-mug/">Personalized dog mug</a></li>
+        <li><a href="/coffee-gifts-for-dog-lovers/">Gifts for dog lovers</a></li>
+        <li><a href="/personalized-dog-mug/">Personalized mug</a></li>
       </ul>
     </section>
     <section id="mugs" class="wrap section">
       <h2>Mugs</h2>
-      <p class="lead">Evergreen and holiday coffee mugs for dog and cat people—from cozy winter and barista designs to Victorian Emporium, Thanksgiving, and Christmas gift mugs. The <a href="/personalized-dog-mug/">personalized dog Christmas mug</a> and the other <a href="/coffee-gifts-for-dog-lovers/">coffee gifts for dog lovers</a> each have a page.</p>
+      <p class="lead">Evergreen and holiday coffee mugs for dog and cat people—from cozy winter and barista designs to Victorian Emporium, Thanksgiving, and Christmas.</p>
       <div class="grid">
-      <article class="card">
+      <article class="card" id="personalized-dog-christmas-mug" data-pet="dog" data-holiday="true">
+        <div class="card-photo">
         <img src="images/01_biscuit_christmas_mockup.jpg" alt="White coffee mug with a golden dog in a Santa hat, the name Biscuit, and Christmas 2026." width="900" height="675" loading="lazy">
+        <p class="sample-badge">Sample personalization</p>
+      </div>
         <div class="card-body">
-          <h3>Personalized Dog Christmas Mug (Biscuit)</h3>
-          <p>A festive mug with your dog's name on it.</p>
+          <h3>Personalized Dog Christmas Mug</h3>
+          <p>A festive mug printed with your dog's name. This photo shows the sample name Biscuit.</p>
+          <p class="facts">White coffee mug. Add the name in the personalization box on Etsy.</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608947223/personalized-dog-christmas-mug-custom" target="_blank" rel="noopener" aria-label="View Personalized Dog Christmas Mug (Biscuit) on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608947223/personalized-dog-christmas-mug-custom" target="_blank" rel="noopener" aria-label="Order Personalized Dog Christmas Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" id="funny-christmas-cat-mug" data-pet="cat" data-holiday="true">
         <img src="images/02_cat_ornament_mockup.jpg" alt="White coffee mug showing a cat knocking a red ornament off a Christmas tree, with the words Gravity Check: Complete." width="900" height="675" loading="lazy">
         <div class="card-body">
           <h3>Funny Christmas Cat Mug</h3>
           <p>For anyone whose cat knocks ornaments off the tree.</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608947349/funny-christmas-cat-mug-cat-knocking" target="_blank" rel="noopener" aria-label="View Funny Christmas Cat Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608947349/funny-christmas-cat-mug-cat-knocking" target="_blank" rel="noopener" aria-label="Order Funny Christmas Cat Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" id="cozy-winter-dog-mug" data-pet="dog">
         <img src="images/03_cozy_winter_dog_mockup.jpg" alt="White coffee mug with a watercolor beagle in a knit sweater by a snowy cabin window, and the words Whisker and Roast." width="900" height="675" loading="lazy">
         <div class="card-body">
           <h3>Cozy Winter Dog Mug</h3>
           <p>A watercolor beagle, snug for the cold season.</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608947433/cozy-winter-dog-mug-watercolor-beagle-in" target="_blank" rel="noopener" aria-label="View Cozy Winter Dog Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608947433/cozy-winter-dog-mug-watercolor-beagle-in" target="_blank" rel="noopener" aria-label="Order Cozy Winter Dog Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="cat">
         <img src="images/04_cat_barista_mockup.jpg" alt="White coffee mug with a retro cat barista pouring coffee at a cafe counter, and the words Purr-fectly Brewed." width="900" height="675" loading="lazy">
         <div class="card-body">
           <h3>Retro Cat Barista Coffee Mug</h3>
-          <p>A retro cat barista for your morning coffee.</p>
+          <p>A retro cat barista pouring coffee, captioned “Purr-fectly Brewed.”</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608969962/retro-cat-barista-coffee-mug-purr-fectly" target="_blank" rel="noopener" aria-label="View Retro Cat Barista Coffee Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608969962/retro-cat-barista-coffee-mug-purr-fectly" target="_blank" rel="noopener" aria-label="Order Retro Cat Barista Coffee Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="cat">
         <img src="images/emporium_victorian_cat_mug.jpg" alt="White mug printed with a Victorian gold and burgundy frame, a white cat, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Cat Coffee Mug</h3>
           <p>A Victorian trade-card mug: a contented cat and steaming cup inside an ornate gold-and-burgundy frame.</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610477671/victorian-cat-coffee-mug-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Cat Coffee Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610477671/victorian-cat-coffee-mug-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Cat Coffee Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog">
         <img src="images/emporium_victorian_dog_mug.jpg" alt="White mug printed with a Victorian gold and burgundy frame, a golden puppy, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Dog Coffee Mug</h3>
           <p>The matching Victorian mug, with a golden dog in the same ornate coffee-trade frame.</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610498830/victorian-dog-coffee-mug-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Dog Coffee Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610498830/victorian-dog-coffee-mug-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Dog Coffee Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="cat" data-holiday="true">
         <img src="images/thanksgiving_cat_mug.jpg" alt="White coffee mug with an orange kitten stealing a turkey leg at a Thanksgiving table, and the words I Regret Nothing." width="2048" height="2048" loading="lazy">
         <div class="card-body">
           <p class="collection">Thanksgiving</p>
           <h3>Funny Thanksgiving Cat Mug</h3>
           <p>An orange kitten steals a turkey leg at the Thanksgiving table, with the caption “I Regret Nothing.”</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4609055973/funny-thanksgiving-cat-mug-i-regret" target="_blank" rel="noopener" aria-label="View Funny Thanksgiving Cat Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4609055973/funny-thanksgiving-cat-mug-i-regret" target="_blank" rel="noopener" aria-label="Order Funny Thanksgiving Cat Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog" data-holiday="true">
         <img src="images/thanksgiving_dog_mug.jpg" alt="White coffee mug with a golden puppy begging beside a roast turkey, and the words Here for the Turkey." width="2048" height="2048" loading="lazy">
         <div class="card-body">
           <p class="collection">Thanksgiving</p>
           <h3>Funny Thanksgiving Dog Mug</h3>
           <p>A golden puppy begs beside a Thanksgiving turkey, paired with the caption “Here for the Turkey.”</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4609062614/funny-thanksgiving-dog-mug-here-for-the" target="_blank" rel="noopener" aria-label="View Funny Thanksgiving Dog Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4609062614/funny-thanksgiving-dog-mug-here-for-the" target="_blank" rel="noopener" aria-label="Order Funny Thanksgiving Dog Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
@@ -178,46 +227,48 @@
       <h2>Totes</h2>
       <p class="lead">Canvas totes with Victorian Emporium cat and dog artwork, plus Victorian Christmas sweater designs.</p>
       <div class="grid">
-      <article class="card">
+      <article class="card" data-pet="cat">
         <img src="images/emporium_victorian_cat_tote.jpg" alt="Natural canvas tote printed with a Victorian frame, a white cat, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Cat Canvas Tote</h3>
-          <p>A canvas tote with the Victorian Emporium cat and coffee design.</p>
+          <p>Natural canvas, with a white cat and a steaming cup inside an ornate gold-and-burgundy frame.</p>
+          <p class="facts">Natural canvas tote · printed when you order</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610498916/victorian-cat-canvas-tote-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Cat Canvas Tote on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610498916/victorian-cat-canvas-tote-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Cat Canvas Tote on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog">
         <img src="images/emporium_victorian_dog_tote.jpg" alt="Natural canvas tote printed with a Victorian frame, a golden puppy, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Dog Canvas Tote</h3>
-          <p>A canvas tote with the Victorian Emporium dog and coffee design.</p>
+          <p>Natural canvas, with a golden puppy and a steaming cup in the same ornate frame.</p>
+          <p class="facts">Natural canvas tote · printed when you order</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610499076/victorian-dog-canvas-tote-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Dog Canvas Tote on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610499076/victorian-dog-canvas-tote-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Dog Canvas Tote on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      </div>
-      <div class="grid">
-      <article class="card">
+      <article class="card" data-pet="cat" data-holiday="true">
         <img src="images/christmas_victorian_cat_tote.jpg" alt="Natural canvas tote printed with an orange tabby cat in a striped Christmas sweater, holding a coffee cup, with holly and the words Whisker and Roast." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas · Tote</p>
           <h3>Victorian Christmas Cat Canvas Tote</h3>
-          <p>A canvas tote printed with a Victorian Christmas cat in a sweater.</p>
+          <p>An orange tabby in a striped Christmas sweater, holding a coffee cup, with holly around the print.</p>
+          <p class="facts">Natural canvas tote · printed when you order</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610541437/victorian-christmas-cat-canvas-tote" target="_blank" rel="noopener" aria-label="View Victorian Christmas Cat Canvas Tote on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610541437/victorian-christmas-cat-canvas-tote" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Cat Canvas Tote on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog" data-holiday="true">
         <img src="images/christmas_victorian_dog_tote.jpg" alt="Natural canvas tote printed with a beagle in a striped Christmas sweater, holding a coffee cup, with holly and the words Whisker and Roast." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas · Tote</p>
           <h3>Victorian Christmas Dog Canvas Tote</h3>
-          <p>A canvas tote printed with a Victorian Christmas dog in a sweater.</p>
+          <p>A beagle in a striped Christmas sweater, holding a coffee cup, with holly around the print.</p>
+          <p class="facts">Natural canvas tote · printed when you order</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610541269/victorian-christmas-dog-canvas-tote" target="_blank" rel="noopener" aria-label="View Victorian Christmas Dog Canvas Tote on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610541269/victorian-christmas-dog-canvas-tote" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Dog Canvas Tote on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
@@ -226,96 +277,104 @@
       <h2>Pillows</h2>
       <p class="lead">Throw pillows in Victorian Emporium coffee-trade art and Victorian Christmas barista scenes.</p>
       <div class="grid">
-      <article class="card">
+      <article class="card" data-pet="cat">
         <img src="images/emporium_victorian_cat_pillow.jpg" alt="Throw pillow on a sofa, printed with a Victorian frame, a white cat, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Cat Throw Pillow</h3>
-          <p>A throw pillow with the Victorian Emporium cat and coffee design.</p>
+          <p>The cat-and-coffee trade card, printed across a throw pillow.</p>
+          <p class="facts">Throw pillow · printed when you order</p>
           <p class="price">$36.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610478379/victorian-cat-throw-pillow-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Cat Throw Pillow on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610478379/victorian-cat-throw-pillow-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Cat Throw Pillow on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog">
         <img src="images/emporium_victorian_dog_pillow.jpg" alt="Throw pillow on a sofa, printed with a Victorian frame, a golden puppy, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Dog Throw Pillow</h3>
-          <p>A throw pillow with the Victorian Emporium dog and coffee design.</p>
+          <p>The golden-puppy trade card, printed across a throw pillow.</p>
+          <p class="facts">Throw pillow · printed when you order</p>
           <p class="price">$36.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610499490/victorian-dog-throw-pillow-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Dog Throw Pillow on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610499490/victorian-dog-throw-pillow-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Dog Throw Pillow on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="cat" data-holiday="true">
         <img src="images/christmas_victorian_cat_pillow.jpg" alt="Throw pillow on a sofa showing an orange cat barista at an espresso machine, framed by holly, with the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas</p>
           <h3>Victorian Christmas Cat Throw Pillow</h3>
           <p>A throw pillow with a Victorian Christmas cat barista, holly, and an espresso machine.</p>
+          <p class="facts">Throw pillow · printed when you order</p>
           <p class="price">$36.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610563064/victorian-christmas-cat-throw-pillow" target="_blank" rel="noopener" aria-label="View Victorian Christmas Cat Throw Pillow on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610563064/victorian-christmas-cat-throw-pillow" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Cat Throw Pillow on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog" data-holiday="true">
         <img src="images/christmas_victorian_dog_pillow.jpg" alt="Throw pillow on a sofa showing a golden dog barista at an espresso machine, framed by holly, with the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas</p>
           <h3>Victorian Christmas Dog Throw Pillow</h3>
           <p>A throw pillow with a Victorian Christmas dog barista, holly, and an espresso machine.</p>
+          <p class="facts">Throw pillow · printed when you order</p>
           <p class="price">$36.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610563326/victorian-christmas-dog-throw-pillow" target="_blank" rel="noopener" aria-label="View Victorian Christmas Dog Throw Pillow on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610563326/victorian-christmas-dog-throw-pillow" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Dog Throw Pillow on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
     </section>
     <section id="ornaments" class="wrap section">
       <h2>Ornaments</h2>
-      <p class="lead">Victorian Christmas ceramic ornaments for dog and cat lovers—seasonal tree gifts, sold on Etsy. The <a href="/dog-christmas-ornaments/">dog Christmas ornament</a> has its own page, and the cat ornament is included with the other <a href="/cat-christmas-gifts/">cat Christmas gifts</a>.</p>
+      <p class="lead">Victorian Christmas ceramic ornaments for dog and cat lovers: a puppy or a kitten in a Santa hat, beside a coffee cup, on a gold cord.</p>
       <div class="grid">
-      <article class="card">
+      <article class="card" data-pet="cat" data-holiday="true">
         <img src="images/christmas_victorian_cat_ornament.jpg" alt="Round cream ceramic Christmas ornament hung from a gold cord, an orange kitten in a Santa hat beside a gold-trimmed coffee cup, holly, coffee beans, and the words Whisker and Roast." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas · Ornament</p>
           <h3>Victorian Christmas Cat Ornament</h3>
-          <p>A ceramic Christmas ornament with a Victorian cat design.</p>
+          <p>Cream ceramic on a gold cord: an orange kitten in a Santa hat beside a coffee cup.</p>
+          <p class="facts">Cream ceramic · gold hanging cord</p>
           <p class="price">$18.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610562234/victorian-christmas-cat-ornament-whisker" target="_blank" rel="noopener" aria-label="View Victorian Christmas Cat Ornament on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610562234/victorian-christmas-cat-ornament-whisker" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Cat Ornament on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog" data-holiday="true">
         <img src="images/christmas_victorian_dog_ornament.jpg" alt="Round cream ceramic Christmas ornament hung from a gold cord, a golden puppy in a Santa hat beside a gold-trimmed coffee cup, holly, coffee beans, and the words Whisker and Roast." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas · Ornament</p>
           <h3>Victorian Christmas Dog Ornament</h3>
-          <p>A ceramic Christmas ornament with a Victorian dog design.</p>
+          <p>Cream ceramic on a gold cord: a golden puppy in a Santa hat beside a coffee cup.</p>
+          <p class="facts">Cream ceramic · gold hanging cord</p>
           <p class="price">$18.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610540895/victorian-christmas-dog-ornament-whisker" target="_blank" rel="noopener" aria-label="View Victorian Christmas Dog Ornament on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610540895/victorian-christmas-dog-ornament-whisker" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Dog Ornament on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
     </section>
     <section id="bandanas" class="wrap section">
       <h2>Pet bandanas</h2>
-      <p class="lead">Victorian Christmas pet bandanas with a cat or dog medallion plus holly, paws, and coffee-bean pattern. Both designs are together on the <a href="/victorian-christmas-pet-bandana/">Victorian Christmas pet bandanas</a> page.</p>
+      <p class="lead">Cream triangular bandanas with a cat or dog medallion, plus holly, paws, and a coffee-bean pattern.</p>
       <div class="grid">
-      <article class="card">
+      <article class="card" data-pet="cat" data-holiday="true">
         <img src="images/christmas_victorian_cat_bandana.jpg" alt="Cream triangular pet bandana with a Victorian Christmas cat, a coffee cup, holly, paw prints, and coffee beans." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas</p>
           <h3>Victorian Christmas Cat Bandana</h3>
           <p>A pet bandana with a Victorian Christmas cat, holly, paws, and coffee beans.</p>
+          <p class="facts">Cream triangular pet bandana · printed when you order</p>
           <p class="price">$29.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610562736/victorian-christmas-cat-bandana-whisker" target="_blank" rel="noopener" aria-label="View Victorian Christmas Cat Bandana on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610562736/victorian-christmas-cat-bandana-whisker" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Cat Bandana on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-pet="dog" data-holiday="true">
         <img src="images/christmas_victorian_dog_bandana.jpg" alt="Cream triangular pet bandana with a Victorian Christmas dog, a coffee cup, holly, paw prints, and coffee beans." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas</p>
           <h3>Victorian Christmas Dog Bandana</h3>
           <p>A pet bandana with a Victorian Christmas dog, holly, paws, and coffee beans.</p>
+          <p class="facts">Cream triangular pet bandana · printed when you order</p>
           <p class="price">$29.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610562948/victorian-christmas-dog-bandana-whisker" target="_blank" rel="noopener" aria-label="View Victorian Christmas Dog Bandana on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610562948/victorian-christmas-dog-bandana-whisker" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Dog Bandana on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
@@ -324,22 +383,23 @@
       <div class="wrap section narrow">
         <h2>About</h2>
         <p>Whisker &amp; Roast makes print-on-demand goods for dog and cat lovers: coffee mugs, canvas totes, throw pillows, Christmas ornaments, and pet bandanas. Each piece is printed when you order and sold through our Etsy shop.</p>
-        <p>Looking for something to read with your coffee? Visit our sister shop, <a href="https://ferrachiarts.com/" target="_blank" rel="noopener">Ferrachi Arts</a>, for printable study guides.</p>
+        <p>Looking for something to read with your coffee? Visit our sister shop, <a href="https://ferrachiarts.com/" target="_blank" rel="noopener">Ferrachi Arts<span class="sr-only"> (opens in a new tab)</span></a>, for printable study guides.</p>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <nav class="footer-links" aria-label="Gift pages">
+      <nav class="footer-links" aria-label="Popular gifts">
         <a href="/victorian-christmas-pet-bandana/">Victorian Christmas pet bandanas</a>
         <a href="/dog-christmas-ornaments/">Dog Christmas ornaments</a>
         <a href="/cat-christmas-gifts/">Cat Christmas gifts</a>
         <a href="/coffee-gifts-for-dog-lovers/">Coffee gifts for dog lovers</a>
         <a href="/personalized-dog-mug/">Personalized dog mug</a>
       </nav>
-      <p>© 2026 Whisker &amp; Roast · <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Shop on Etsy</a></p>
+      <p>© 2026 Whisker &amp; Roast · <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Shop on Etsy<span class="sr-only"> (opens in a new tab)</span></a></p>
       <p class="small">All orders and payments are handled securely through Etsy.</p>
     </div>
   </footer>
+  <script src="js/site.js"></script>
 </body>
 </html>

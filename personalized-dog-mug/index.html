@@ -93,7 +93,7 @@
     {
       "@type": "Product",
       "@id": "https://whiskerandroast.com/personalized-dog-mug/#personalized-dog-christmas-mug",
-      "name": "Personalized Dog Christmas Mug (Biscuit)",
+      "name": "Personalized Dog Christmas Mug",
       "description": "A festive mug with your dog's name on it.",
       "image": {
         "@type": "ImageObject",
@@ -122,7 +122,7 @@
   </script>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-  <meta name="theme-color" content="#FCF8EF">
+  <meta name="theme-color" content="#FCF7EC">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -134,13 +134,19 @@
     <div class="wrap header-inner">
       <a class="brand" href="/"><img src="/images/logo.jpg" alt="Whisker &amp; Roast logo" width="56" height="56"><span>Whisker &amp; Roast</span></a>
       <nav class="site-nav" aria-label="Main">
-        <a href="/#mugs">Mugs</a>
-        <a href="/#totes">Totes</a>
-        <a href="/#pillows">Pillows</a>
-        <a href="/#ornaments">Ornaments</a>
-        <a href="/#bandanas">Pet bandanas</a>
-        <a href="/#about">About</a>
-        <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop</a>
+        <a class="nav-etsy" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop<span class="sr-only"> (opens in a new tab)</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-panel" id="site-menu">
+          <a href="/#mugs">Mugs</a>
+          <a href="/#totes">Totes</a>
+          <a href="/#pillows">Pillows</a>
+          <a href="/#ornaments">Ornaments</a>
+          <a href="/#bandanas">Pet bandanas</a>
+          <a href="/#about">About</a>
+          <a class="nav-shop" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
       </nav>
     </div>
   </header>
@@ -155,22 +161,27 @@
       <div class="page-intro">
         <h1>Personalized dog Christmas mug</h1>
         <p>A festive Christmas mug with your dog's name on it. The photo is a sample: a golden dog in a Santa hat, the name Biscuit, and Christmas 2026.</p>
+        <p>On the Etsy listing, type your dog's name in the personalization box. If the listing has a character limit, it is shown there.</p>
         <p>$24.99 with free shipping. You order on Etsy. The Victorian, winter, and Thanksgiving dog mugs are with the coffee gifts for dog lovers.</p>
       </div>
-      <h2>The Biscuit Christmas mug</h2>
+      <h2>Add your dog's name</h2>
       <div class="grid grid-single">
-      <article class="card" id="personalized-dog-christmas-mug">
+      <article class="card" data-pet="dog" data-holiday="true" id="personalized-dog-christmas-mug">
+        <div class="card-photo">
         <img src="/images/01_biscuit_christmas_mockup.jpg" alt="White coffee mug with a golden dog in a Santa hat, the name Biscuit, and Christmas 2026." width="900" height="675" loading="lazy">
+        <p class="sample-badge">Sample personalization</p>
+      </div>
         <div class="card-body">
-          <h3>Personalized Dog Christmas Mug (Biscuit)</h3>
-          <p>A festive mug with your dog's name on it.</p>
+          <h3>Personalized Dog Christmas Mug</h3>
+          <p>A festive mug printed with your dog's name. This photo shows the sample name Biscuit.</p>
+          <p class="facts">White coffee mug. Add the name in the personalization box on Etsy.</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608947223/personalized-dog-christmas-mug-custom" target="_blank" rel="noopener" aria-label="View Personalized Dog Christmas Mug (Biscuit) on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608947223/personalized-dog-christmas-mug-custom" target="_blank" rel="noopener" aria-label="Order Personalized Dog Christmas Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
       <div class="page-note">
-        <p>Use View on Etsy to order.</p>
+        <p>Use Order on Etsy to check out. Type your dog's name in the personalization box on that listing.</p>
       </div>
       <h2>More gifts</h2>
       <p class="lead"><a href="/#mugs">All mugs</a> · <a href="/coffee-gifts-for-dog-lovers/">Coffee gifts for dog lovers</a> · <a href="/dog-christmas-ornaments/">Dog Christmas ornaments</a></p>
@@ -178,7 +189,7 @@
   </main>
   <footer class="site-footer">
     <div class="wrap">
-      <nav class="footer-links" aria-label="Gift pages">
+      <nav class="footer-links" aria-label="Popular gifts">
         <a href="/">All gifts</a>
         <a href="/victorian-christmas-pet-bandana/">Victorian Christmas pet bandanas</a>
         <a href="/dog-christmas-ornaments/">Dog Christmas ornaments</a>
@@ -186,9 +197,10 @@
         <a href="/coffee-gifts-for-dog-lovers/">Coffee gifts for dog lovers</a>
         <a href="/personalized-dog-mug/" aria-current="page">Personalized dog mug</a>
       </nav>
-      <p>© 2026 Whisker &amp; Roast · <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Shop on Etsy</a></p>
+      <p>© 2026 Whisker &amp; Roast · <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Shop on Etsy<span class="sr-only"> (opens in a new tab)</span></a></p>
       <p class="small">All orders and payments are handled securely through Etsy.</p>
     </div>
   </footer>
+  <script src="/js/site.js"></script>
 </body>
 </html>
