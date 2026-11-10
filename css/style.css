@@ -30,6 +30,9 @@ a{color:var(--coffee)}img{max-width:100%;height:auto;display:block}
 .hero-inner{display:flex;flex-direction:column;gap:1.1rem;padding-top:1.35rem;padding-bottom:1.15rem}
 .hero h1{font-size:clamp(1.9rem,4.4vw,2.75rem);margin-bottom:.35rem}
 .hero p{font-size:1.08rem;max-width:42rem;margin:0}
+/* HOLIDAY-ORDER-BY: remove this rule when the notice blocks are deleted from the HTML. */
+.holiday-note,.hero p.holiday-note,.page-intro p.holiday-note{max-width:40rem;margin:0 0 .7rem;padding:.38rem .8rem;background:var(--white);color:var(--coffee);border:1px solid var(--gold);border-radius:12px;font-size:.9rem;font-weight:700;line-height:1.35;text-align:center}
+.hero p.holiday-note{background:rgba(255,255,255,.8)}
 .hero-picks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem;list-style:none;margin:0;padding:0}
 .hero-picks a{display:flex;flex-direction:column;background:var(--white);color:var(--brown);text-decoration:none;border-radius:16px;overflow:hidden;border-top:4px solid var(--gold);box-shadow:0 4px 18px rgba(61,43,31,.08);font-weight:700;min-height:44px}
 .hero-picks a:hover,.hero-picks a:focus-visible{color:var(--coffee)}
@@ -92,8 +95,9 @@ a{color:var(--coffee)}img{max-width:100%;height:auto;display:block}
   .header-inner{flex-wrap:nowrap;padding-top:.4rem;padding-bottom:.4rem;gap:.5rem}
   .site-nav{margin-left:auto;gap:.35rem}
   .hero p{font-size:1rem}
-  .hero-inner{gap:.85rem;padding-top:1rem;padding-bottom:.75rem}
-  .cta{margin-top:.75rem}
+  .hero p.holiday-note,.page-intro p.holiday-note{margin:0 0 .3rem;padding:.26rem .6rem;font-size:.8rem;line-height:1.3}
+  .hero-inner{gap:.45rem;padding-top:.45rem;padding-bottom:.55rem}
+  .cta{margin-top:.5rem}
   .hero-picks img{height:9.25rem;aspect-ratio:auto;object-fit:cover;object-position:center 42%}
   .hero-picks .sample-badge{display:none}
   .nav-etsy{display:inline-flex;padding:.4rem .55rem}
