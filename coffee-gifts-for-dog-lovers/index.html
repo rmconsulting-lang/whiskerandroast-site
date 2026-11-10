@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.classList.add("js");</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Coffee Gifts for Dog Lovers — Whisker &amp; Roast</title>
@@ -118,7 +119,7 @@
           "@type": "ListItem",
           "position": 3,
           "url": "https://whiskerandroast.com/coffee-gifts-for-dog-lovers/#personalized-dog-christmas-mug",
-          "name": "Personalized Dog Christmas Mug (Biscuit)",
+          "name": "Personalized Dog Christmas Mug",
           "item": {
             "@id": "https://whiskerandroast.com/coffee-gifts-for-dog-lovers/#personalized-dog-christmas-mug"
           }
@@ -218,7 +219,7 @@
     {
       "@type": "Product",
       "@id": "https://whiskerandroast.com/coffee-gifts-for-dog-lovers/#personalized-dog-christmas-mug",
-      "name": "Personalized Dog Christmas Mug (Biscuit)",
+      "name": "Personalized Dog Christmas Mug",
       "description": "A festive mug with your dog's name on it.",
       "image": {
         "@type": "ImageObject",
@@ -355,7 +356,7 @@
   </script>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-  <meta name="theme-color" content="#FCF8EF">
+  <meta name="theme-color" content="#FCF7EC">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -367,13 +368,19 @@
     <div class="wrap header-inner">
       <a class="brand" href="/"><img src="/images/logo.jpg" alt="Whisker &amp; Roast logo" width="56" height="56"><span>Whisker &amp; Roast</span></a>
       <nav class="site-nav" aria-label="Main">
-        <a href="/#mugs">Mugs</a>
-        <a href="/#totes">Totes</a>
-        <a href="/#pillows">Pillows</a>
-        <a href="/#ornaments">Ornaments</a>
-        <a href="/#bandanas">Pet bandanas</a>
-        <a href="/#about">About</a>
-        <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop</a>
+        <a class="nav-etsy" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop<span class="sr-only"> (opens in a new tab)</span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="nav-panel" id="site-menu">
+          <a href="/#mugs">Mugs</a>
+          <a href="/#totes">Totes</a>
+          <a href="/#pillows">Pillows</a>
+          <a href="/#ornaments">Ornaments</a>
+          <a href="/#bandanas">Pet bandanas</a>
+          <a href="/#about">About</a>
+          <a class="nav-shop" href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Etsy shop<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
       </nav>
     </div>
   </header>
@@ -388,81 +395,91 @@
       <div class="page-intro">
         <h1>Coffee gifts for dog lovers</h1>
         <p>Gifts for someone who likes dogs and a morning cup. These are mugs, totes, and pillows to keep, not coffee beans or a drink.</p>
-        <p>You'll find a Victorian dog mug, a cozy winter beagle, and a Christmas mug whose sample reads Biscuit, plus totes and pillows in the same dog-and-coffee art. The Thanksgiving dog mug is with the other mugs on the shop page. Free shipping is included.</p>
+        <p>You'll find a Victorian dog mug, a cozy winter beagle, and a Christmas mug printed with your dog's name—the photo is a sample that reads Biscuit—plus totes and pillows in the same dog-and-coffee art. The <a href="/?pet=dog#mugs">Thanksgiving dog mug</a> is with the other mugs on the shop page. Free shipping is included.</p>
       </div>
       <h2>Mugs, totes, and pillows</h2>
       <div class="grid">
-      <article class="card" id="victorian-dog-coffee-mug">
+      <article class="card" data-pet="dog" id="victorian-dog-coffee-mug">
         <img src="/images/emporium_victorian_dog_mug.jpg" alt="White mug printed with a Victorian gold and burgundy frame, a golden puppy, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Dog Coffee Mug</h3>
           <p>The matching Victorian mug, with a golden dog in the same ornate coffee-trade frame.</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610498830/victorian-dog-coffee-mug-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Dog Coffee Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610498830/victorian-dog-coffee-mug-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Dog Coffee Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card" id="cozy-winter-dog-mug">
+      <article class="card" data-pet="dog" id="cozy-winter-dog-mug">
         <img src="/images/03_cozy_winter_dog_mockup.jpg" alt="White coffee mug with a watercolor beagle in a knit sweater by a snowy cabin window, and the words Whisker and Roast." width="900" height="675" loading="lazy">
         <div class="card-body">
           <h3>Cozy Winter Dog Mug</h3>
           <p>A watercolor beagle, snug for the cold season.</p>
+          <p class="facts">White coffee mug · printed when you order</p>
           <p class="price">$21.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608947433/cozy-winter-dog-mug-watercolor-beagle-in" target="_blank" rel="noopener" aria-label="View Cozy Winter Dog Mug on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608947433/cozy-winter-dog-mug-watercolor-beagle-in" target="_blank" rel="noopener" aria-label="Order Cozy Winter Dog Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card" id="personalized-dog-christmas-mug">
+      <article class="card" data-pet="dog" data-holiday="true" id="personalized-dog-christmas-mug">
+        <div class="card-photo">
         <img src="/images/01_biscuit_christmas_mockup.jpg" alt="White coffee mug with a golden dog in a Santa hat, the name Biscuit, and Christmas 2026." width="900" height="675" loading="lazy">
+        <p class="sample-badge">Sample personalization</p>
+      </div>
         <div class="card-body">
-          <h3>Personalized Dog Christmas Mug (Biscuit)</h3>
-          <p>A festive mug with your dog's name on it.</p>
+          <h3>Personalized Dog Christmas Mug</h3>
+          <p>A festive mug printed with your dog's name. This photo shows the sample name Biscuit.</p>
+          <p class="facts">White coffee mug. Add the name in the personalization box on Etsy.</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4608947223/personalized-dog-christmas-mug-custom" target="_blank" rel="noopener" aria-label="View Personalized Dog Christmas Mug (Biscuit) on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4608947223/personalized-dog-christmas-mug-custom" target="_blank" rel="noopener" aria-label="Order Personalized Dog Christmas Mug on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card" id="victorian-dog-canvas-tote">
+      <article class="card" data-pet="dog" id="victorian-dog-canvas-tote">
         <img src="/images/emporium_victorian_dog_tote.jpg" alt="Natural canvas tote printed with a Victorian frame, a golden puppy, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Dog Canvas Tote</h3>
-          <p>A canvas tote with the Victorian Emporium dog and coffee design.</p>
+          <p>Natural canvas, with a golden puppy and a steaming cup in the same ornate frame.</p>
+          <p class="facts">Natural canvas tote · printed when you order</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610499076/victorian-dog-canvas-tote-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Dog Canvas Tote on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610499076/victorian-dog-canvas-tote-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Dog Canvas Tote on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card" id="victorian-christmas-dog-canvas-tote">
+      <article class="card" data-pet="dog" data-holiday="true" id="victorian-christmas-dog-canvas-tote">
         <img src="/images/christmas_victorian_dog_tote.jpg" alt="Natural canvas tote printed with a beagle in a striped Christmas sweater, holding a coffee cup, with holly and the words Whisker and Roast." width="1400" height="1400" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas · Tote</p>
           <h3>Victorian Christmas Dog Canvas Tote</h3>
-          <p>A canvas tote printed with a Victorian Christmas dog in a sweater.</p>
+          <p>A beagle in a striped Christmas sweater, holding a coffee cup, with holly around the print.</p>
+          <p class="facts">Natural canvas tote · printed when you order</p>
           <p class="price">$24.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610541269/victorian-christmas-dog-canvas-tote" target="_blank" rel="noopener" aria-label="View Victorian Christmas Dog Canvas Tote on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610541269/victorian-christmas-dog-canvas-tote" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Dog Canvas Tote on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card" id="victorian-dog-throw-pillow">
+      <article class="card" data-pet="dog" id="victorian-dog-throw-pillow">
         <img src="/images/emporium_victorian_dog_pillow.jpg" alt="Throw pillow on a sofa, printed with a Victorian frame, a golden puppy, a cup of coffee, and the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Emporium</p>
           <h3>Victorian Dog Throw Pillow</h3>
-          <p>A throw pillow with the Victorian Emporium dog and coffee design.</p>
+          <p>The golden-puppy trade card, printed across a throw pillow.</p>
+          <p class="facts">Throw pillow · printed when you order</p>
           <p class="price">$36.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610499490/victorian-dog-throw-pillow-whisker-and" target="_blank" rel="noopener" aria-label="View Victorian Dog Throw Pillow on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610499490/victorian-dog-throw-pillow-whisker-and" target="_blank" rel="noopener" aria-label="Order Victorian Dog Throw Pillow on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
-      <article class="card" id="victorian-christmas-dog-throw-pillow">
+      <article class="card" data-pet="dog" data-holiday="true" id="victorian-christmas-dog-throw-pillow">
         <img src="/images/christmas_victorian_dog_pillow.jpg" alt="Throw pillow on a sofa showing a golden dog barista at an espresso machine, framed by holly, with the words Whisker and Roast." width="1024" height="1024" loading="lazy">
         <div class="card-body">
           <p class="collection">Victorian Christmas</p>
           <h3>Victorian Christmas Dog Throw Pillow</h3>
           <p>A throw pillow with a Victorian Christmas dog barista, holly, and an espresso machine.</p>
+          <p class="facts">Throw pillow · printed when you order</p>
           <p class="price">$36.99 <span>· Free shipping</span></p>
-          <a class="btn" href="https://www.etsy.com/listing/4610563326/victorian-christmas-dog-throw-pillow" target="_blank" rel="noopener" aria-label="View Victorian Christmas Dog Throw Pillow on Etsy">View on Etsy</a>
+          <a class="btn" href="https://www.etsy.com/listing/4610563326/victorian-christmas-dog-throw-pillow" target="_blank" rel="noopener" aria-label="Order Victorian Christmas Dog Throw Pillow on Etsy (opens in a new tab)">Order on Etsy</a>
         </div>
       </article>
       </div>
       <div class="page-note">
-        <p>Use View on Etsy to order the one you like.</p>
+        <p>Use Order on Etsy to check out the one you like.</p>
       </div>
       <h2>More gifts</h2>
       <p class="lead"><a href="/#mugs">All mugs</a> · <a href="/personalized-dog-mug/">Personalized dog mug</a> · <a href="/dog-christmas-ornaments/">Dog Christmas ornaments</a> · <a href="/victorian-christmas-pet-bandana/">Victorian Christmas pet bandanas</a></p>
@@ -478,9 +495,10 @@
         <a href="/coffee-gifts-for-dog-lovers/" aria-current="page">Coffee gifts for dog lovers</a>
         <a href="/personalized-dog-mug/">Personalized dog mug</a>
       </nav>
-      <p>© 2026 Whisker &amp; Roast · <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Shop on Etsy</a></p>
+      <p>© 2026 Whisker &amp; Roast · <a href="https://www.etsy.com/shop/WhiskerAndRoast" target="_blank" rel="noopener">Shop on Etsy<span class="sr-only"> (opens in a new tab)</span></a></p>
       <p class="small">All orders and payments are handled securely through Etsy.</p>
     </div>
   </footer>
+  <script src="/js/site.js"></script>
 </body>
 </html>
