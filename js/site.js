@@ -1,4 +1,6 @@
 (function () {
+  var root = document.documentElement;
+  root.classList.add("js");
   var toggle = document.querySelector(".nav-toggle");
   var panel = document.getElementById("site-menu");
   var mq = window.matchMedia("(max-width: 720px)");
@@ -30,6 +32,8 @@
     var onViewport = function () { setOpen(false); };
     if (mq.addEventListener) mq.addEventListener("change", onViewport);
     else if (mq.addListener) mq.addListener(onViewport);
+    setOpen(false);
+    root.classList.add("nav-ready");
   }
 
   var links = Array.prototype.slice.call(document.querySelectorAll("#site-menu a[href*='#']"));
